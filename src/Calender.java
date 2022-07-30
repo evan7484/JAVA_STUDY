@@ -28,6 +28,7 @@ public class Calender {
 
             System.out.printf("%d일은 %d일까지 있습니다.\n", Month, cal.GetMaxDays(Month));
         }
+        System.out.println("종료되었습니다.")
         scanner.close();
     }
     }
