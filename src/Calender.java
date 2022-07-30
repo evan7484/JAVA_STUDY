@@ -17,13 +17,17 @@ public class Calender {
         System.out.println("22 23 24 25 26 27 28");
 
         //숫자를 입력받아 해당하는 달의 최대 일수를 출력하는 프로그램
-
-        System.out.println("달을 입력하세요: ");
         Calender cal = new Calender();
-        Scanner scanner = new Scanner(System.in);
-        int Month = scanner.nextInt();
 
-        System.out.printf("%d일은 %d일까지 있습니다.",Month, cal.GetMaxDays(Month));
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("횟수를 입력하세요: ");
+        int number = scanner.nextInt();
+        for (int i = 0; i < number; i++) {
+            System.out.println("달을 입력하세요: ");
+            int Month = scanner.nextInt();
+
+            System.out.printf("%d일은 %d일까지 있습니다.\n", Month, cal.GetMaxDays(Month));
+        }
         scanner.close();
     }
     }
