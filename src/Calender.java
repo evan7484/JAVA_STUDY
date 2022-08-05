@@ -15,6 +15,7 @@ public class Calender {
         System.out.println(" 8  9 10 11 12 13 14");
         System.out.println("15 16 17 18 19 20 21");
         System.out.println("22 23 24 25 26 27 28");
+        System.out.println("29 30 31 32 33 34 35 ");
 
         //숫자를 입력받아 해당하는 달의 최대 일수를 출력하는 프로그램
         Calender cal = new Calender();
@@ -28,7 +29,7 @@ public class Calender {
 
             System.out.printf("%d일은 %d일까지 있습니다.\n", Month, cal.GetMaxDays(Month));
         }
-        System.out.println("종료되었습니다.")
+        System.out.println("종료되었습니다.");
         scanner.close();
     }
     }
